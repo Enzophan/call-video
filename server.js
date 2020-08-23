@@ -8,7 +8,7 @@ const peerServer = ExpressPeerServer(server, {
     debug: true
 })
 
-const port = 3030 || PORT;
+const port = process.env.PORT || 3030;
 
 app.set('view engine', 'ejs');
 app.use(express.static('public'));

@@ -1,11 +1,12 @@
 #video-grid {
     display: flex;
     justify-content: center;
-
+    flex-wrap: wrap;
 }
 
 video {
-    width: 400px;
     height: 300px;
+    width: 400px;
     object-fit: cover;
+    padding: 8px;
 }
